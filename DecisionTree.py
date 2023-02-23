@@ -11,7 +11,9 @@ if __name__ == '__main__':
     treeClassifier = tree.DecisionTreeClassifier()
     treeClassifier = treeClassifier.fit(inputValues, targetValues)
 
-    result = treeClassifier.predict([[2., 2.]])
+    result = treeClassifier.predict([[2.5, 2.5]])
 
     if result == [2]:
         print("Hello World 😎")
+    else:
+        print(result)
